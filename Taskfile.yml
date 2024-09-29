@@ -1,0 +1,10 @@
+# https://taskfile.dev/usage/
+version: '3'
+tasks:
+  r: |
+    cargo run -- task Taskfile.yml
+    cargo run -- foo test.txt
+  rel: cargo build --release
+  pub: cargo publish
+
+  install: cargo install hello-grrs

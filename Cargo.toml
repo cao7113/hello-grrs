@@ -1,0 +1,37 @@
+[package]
+name = "hello-grrs"
+version = "0.1.0"
+edition = "2021"
+authors = ["cao7113@hotmail.com"]
+license = "MIT OR Apache-2.0"
+description = "A tool to search files"
+readme = "README.md"
+homepage = "https://github.com/cao7113/hello-grrs"
+repository = "https://github.com/cao7113/hello-grrs"
+keywords = ["cli", "search", "demo"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "grrs"        # The name of the target.
+path = "src/main.rs" # The source file of the target.
+test = true          # Is tested by default.
+doctest = true       # Documentation examples are tested by default.
+bench = true         # Is benchmarked by default.
+doc = true           # Is documented by default.
+proc-macro = false   # Set to `true` for a proc-macro library.
+harness = true       # Use libtest harness.
+edition = "2021"     # The edition of the target.
+# crate-type = ["bin"]   # The crate types to generate.
+required-features = [] # Features required to build this target (N/A for lib).
+
+[dependencies]
+clap = { version = "4.5.18", features = ["derive"] }
+# clap-verbosity-flag 
+anyhow = "1.0.89"
+# ansi_term
+# Using the indicatif crate, you can add progress bars and little spinners
+
+[dev-dependencies]
+assert_cmd = "2.0.16"
+assert_fs = "1.1.2"
+predicates = "3.1.2"
