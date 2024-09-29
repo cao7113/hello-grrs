@@ -17,3 +17,4 @@ grrs hello some-file
 - https://rust-cli.github.io/book/tutorial/setup.html
 - https://github.com/rust-cli/book/blob/master/src/tutorial/testing
 - https://github.com/BurntSushi/ripgrep
+- https://github.com/rustwasm/wasm-pack
